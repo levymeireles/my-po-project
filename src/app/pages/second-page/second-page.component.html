@@ -1,0 +1,29 @@
+<p>Hello Prestadores de Serviccos</p>
+<p>{{text}}</p>
+
+
+<input type="text" [value]="text"/>
+
+<button (click)="clickedButton()">Button</button>
+<br />
+<po-button (p-click)="clickedButton()" p-label="Button PO-UI"></po-button>
+
+<po-container *ngFor="let schec of schedule">
+  <div *ngIf="schec.cliente == 'CLIENTE TEC 013'">
+    <po-widget class="po-lg-3 po-mb-1" p-title="Horários">
+      <div class="po-font-subtitle">Hora ini: {{schec.horaIni}}</div>
+      <div class="po-font-subtitle">Hora fim: {{schec.horaFim}}</div>
+    </po-widget>
+
+    <po-widget class="po-lg-3 po-mb-1" p-title="Horários">
+      <div class="po-font-subtitle">Num O.S.: {{schec.numOS}}</div>
+      <div class="po-font-subtitle">Cliente:{{schec.cliente}}</div>
+    </po-widget>
+
+    <po-widget class="po-lg-3 po-mb-1" p-title="Horários">
+      <div class="po-font-subtitle">Tipo O.S.: {{schec.tipoOs}}</div>
+      <div class="po-font-subtitle">Status O.S.:{{schec.statusOs}}</div>
+    </po-widget>
+  </div>
+</po-container>
+

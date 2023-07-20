@@ -1,0 +1,39 @@
+<div class="po-row">
+  <po-table class="po-mt-1 po-md-12" #table [p-columns]="columns"
+    p-service-api="https://po-sample-api.fly.dev/v1/heroes" [p-height]="300" [p-infinite-scroll]="true">
+  </po-table>
+</div>
+
+<div class="po-row">
+  <po-table class="po-mt-1 po-md-12" #table [p-columns]="columns" [p-items]="items" [p-height]="300"
+    [p-infinite-scroll]="true">
+  </po-table>
+</div>
+
+<div>
+  <table>
+    <thead>
+      <th>Coluna</th>
+      <th>Coluna</th>
+      <th>Coluna</th>
+      <th>Coluna</th>
+      <th>Coluna</th>
+    </thead>
+    <tbody>
+      <tr>
+        <td>LINHA 1</td>
+        <td>LINHA 1</td>
+        <td>LINHA 1</td>
+        <td>LINHA 1</td>
+        <td>LINHA 1</td>
+      </tr>
+      <tr>
+        <td>LINHA 2</td>
+        <td>LINHA 2</td>
+        <td>LINHA 2</td>
+        <td>LINHA 2</td>
+        <td>LINHA 2</td>
+      </tr>
+      </tbody>
+  </table>
+</div>
